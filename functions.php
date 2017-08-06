@@ -111,6 +111,16 @@ function ds_blade_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'					=> esc_html__( 'Footer Widget Area', 'ds-blade' ),
+		'id'						=> 'footer-1',
+		'description'		=> esc_html__( 'Add widget here.', 'ds-blade' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
 }
 add_action( 'widgets_init', 'ds_blade_widgets_init' );
 

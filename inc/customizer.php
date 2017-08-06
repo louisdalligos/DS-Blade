@@ -25,6 +25,126 @@ function ds_blade_customize_register( $wp_customize ) {
 			'render_callback' => 'ds_blade_customize_partial_blogdescription',
 		) );
 	}
+
+	// sections
+	$wp_customize->add_section('theme_options_section', array(
+		'title' => __("Theme Options", 'ds-volvo')
+	));
+
+	$wp_customize->add_section('footer_social_media_links', array(
+		'title' => __("Social Media Links", 'ds-volvo')
+	));
+
+	// settings
+	$wp_customize->add_setting('site_dealer_name', array(
+		'default' => __("Add name of the dealer"),
+		'transport' => 'refresh'
+	));
+	$wp_customize->add_setting('site_dealer_address', array(
+		'default' => __("Add your address here"),
+		'transport' => 'refresh'
+	));
+	$wp_customize->add_setting('site_dealer_contact_number', array(
+		'default' => __("Add your contact number here"),
+		'transport' => 'refresh'
+	));
+	$wp_customize->add_setting('copyright_text', array(
+		'default' => __("Add copyright text here"),
+		'transport' => 'refresh'
+	));
+
+	$wp_customize->add_setting('facebook_link', array(
+		'default' => __("Add your facebook profile"),
+		'transport' => 'refresh'
+	));
+	$wp_customize->add_setting('twitter_link', array(
+		'default' => __("Add your twitter profile"),
+		'transport' => 'refresh'
+	));
+	$wp_customize->add_setting('linkedin_link', array(
+		'default' => __("Add your linkedin profile"),
+		'transport' => 'refresh'
+	));
+	$wp_customize->add_setting('google_link', array(
+		'default' => __("Add your google profile"),
+		'transport' => 'refresh'
+	));
+
+	// control
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		'theme_option_dealer_name',
+		array(
+			'label' => __("Dealer Name", 'ds-volvo'),
+			'section' => 'theme_options_section',
+			'settings' => 'site_dealer_name'
+		)
+	));
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		'theme_option_dealer_address',
+		array(
+			'label' => __("Dealer Address", 'ds-volvo'),
+			'section' => 'theme_options_section',
+			'settings' => 'site_dealer_address'
+		)
+	));
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		'theme_option_dealer_contact_number',
+		array(
+			'label' => __("Contact Number", 'ds-volvo'),
+			'section' => 'theme_options_section',
+			'settings' => 'site_dealer_contact_number'
+		)
+	));
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		'theme_option_copyright_text',
+		array(
+			'label' => __("Copyright Text", 'ds-volvo'),
+			'section' => 'theme_options_section',
+			'settings' => 'copyright_text'
+		)
+	));
+
+
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		'theme_footer_fb_link',
+		array(
+			'label' => __("Facebook Profile URL", 'ds-volvo'),
+			'section' => 'footer_social_media_links',
+			'settings' => 'facebook_link'
+		)
+	));
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		'theme_footer_twitter_link',
+		array(
+			'label' => __("Twitter Profile URL", 'ds-volvo'),
+			'section' => 'footer_social_media_links',
+			'settings' => 'twitter_link'
+		)
+	));
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		'theme_footer_linkedin_link',
+		array(
+			'label' => __("LinkedIn Profile URL", 'ds-volvo'),
+			'section' => 'footer_social_media_links',
+			'settings' => 'linkedin_link'
+		)
+	));
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		'theme_footer_google_link',
+		array(
+			'label' => __("Google Profile URL", 'ds-volvo'),
+			'section' => 'footer_social_media_links',
+			'settings' => 'google_link'
+		)
+	));
 }
 add_action( 'customize_register', 'ds_blade_customize_register' );
 

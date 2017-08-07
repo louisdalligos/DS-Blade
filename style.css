@@ -65,7 +65,7 @@ textarea {
 }
 
 select.form-control {
-  background: #fff url(../img/select-bg.png) no-repeat 95% 16px;
+  background: #fff url(img/select-bg.png) no-repeat 95% 16px;
 }
 
 .form-control {
@@ -623,13 +623,13 @@ select.form-control {
   position: absolute;
   top: 0;
   left: -29px;
-  content: url(../img/price-bg-before.png);
+  content: url(img/price-bg-before.png);
 }
 .carousel .slide-price:after {
   position: absolute;
   top: 0;
   right: -15px;
-  content: url(../img/price-bg-after.png);
+  content: url(img/price-bg-after.png);
 }
 
 /* Search Car */
@@ -831,7 +831,7 @@ select.form-control {
 
 /* Car gallery */
 .ds-blade-car-gallery.has-bg {
-  background: url(../img/gallery-bg.jpg);
+  background: url(img/gallery-bg.jpg);
   background-repeat: repeat;
 }
 
@@ -1004,7 +1004,7 @@ select.form-control {
 }
 
 .page-banner-has-bg {
-  background: url(../img/page-banner.jpg);
+  background: url(img/page-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

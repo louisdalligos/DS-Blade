@@ -1,7 +1,7 @@
 $(function() {
 	$( ".ds-blade-slider" ).slider();
 
-	$( ".ds-blade-slider .ui-slider-handle").append('<div class="ds-blade-handle"><img src="img/ui-handle.png" alt="handle" /></div>');
+	$( ".ds-blade-slider .ui-slider-handle").append('<div class="ds-blade-handle"><img src="../img/ui-handle.png" alt="handle" /></div>');
 });
 
 function dateFormatter(date) {
@@ -13,13 +13,13 @@ function init_map(){
     var gmMapDiv = $("#dealer-map");
 
     (function($){
-               
+
         if (gmMapDiv.length) {
-        
+
             var gmCenterAddress = gmMapDiv.attr("data-address");
             var gmMarkerAddress = gmMapDiv.attr("data-address");
-            
-            
+
+
             gmMapDiv.gmap3({
                 action: "init",
                 marker: {
@@ -81,10 +81,10 @@ function range_slider() {
 
 $(document).ready(function() {
     range_slider();
-	init_map();	
+	init_map();
 
     $('.slide-navigation').on('click', 'li', function() {
         $('.slide-navigation li.active').removeClass('active');
         $(this).addClass('active');
     });
-}); 
+});

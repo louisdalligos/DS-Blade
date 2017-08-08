@@ -128,7 +128,8 @@ add_action( 'widgets_init', 'ds_blade_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ds_blade_scripts() {
-	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), null, 'all' );
+	//wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
 	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 	wp_enqueue_style( 'roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:400,900,500,300');
 	wp_enqueue_style( 'jquery-ui',  get_template_directory_uri() .'/js/jquery-ui/jquery-ui.min.css', array(), null, 'all' );

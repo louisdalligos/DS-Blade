@@ -152,6 +152,10 @@ function ds_blade_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// localize script
+	$translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
+	wp_localize_script( 'custom-js', 'object_name', $translation_array );
 }
 add_action( 'wp_enqueue_scripts', 'ds_blade_scripts' );
 

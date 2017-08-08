@@ -1,7 +1,11 @@
+var templateUrl = object_name.templateUrl;
+
 $(function() {
+	console.log(templateUrl);
+
 	$( ".ds-blade-slider" ).slider();
 
-	$( ".ds-blade-slider .ui-slider-handle").append('<div class="ds-blade-handle"><img src="../img/ui-handle.png" alt="handle" /></div>');
+	$( ".ds-blade-slider .ui-slider-handle").append('<div class="ds-blade-handle"><img src="' + templateUrl + '/img/ui-handle.png" alt="handle" /></div>');
 });
 
 function dateFormatter(date) {
@@ -25,7 +29,7 @@ function init_map(){
                 marker: {
                     address: gmMarkerAddress,
                     options: {
-                        icon: "img/map-marker.png"
+                        icon: templateUrl + "/img/map-marker.png"
                     }
                 },
                 map: {

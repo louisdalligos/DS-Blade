@@ -219,6 +219,53 @@
     	</div>
     </div>
 
+    <!-- Sale Banner -->
+    <div class="ds-blade ds-blade-secondary ds-blade-has-top-border default-border-color">
+    	<div class="container">
+    		<div class="col-md-12">
+    			<img src="<?php echo get_template_directory_uri(); ?>/img/sale-banner.jpg" alt="sale" class="img-responsive center-block">
+    		</div>
+    	</div>
+    </div>
+
+    <!-- Page content -->
+    <div class="ds-blade ds-blade-default">
+    	<div class="container">
+    		<div class="col-md-8">
+    			<?php echo the_content(); ?>
+    		</div>
+    		<div class="col-md-4">
+    			<?php get_sidebar(); ?>
+    		</div>
+    	</div>
+    </div>
+
+    <!-- CTA's -->
+    <div class="ds-blade ds-blade-secondary ds-blade-has-top-border default-border-color ds-blade-ctas">
+    	<div class="container">
+    		<div class="col-md-4 ds-blade-cta">
+    			<div class="icon-wrap">
+    				<i class="icon icon-wrench"></i>
+    			</div>
+    			<h4>Comprehensive Servicing</h4>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae erat venenatis nisi porta vestibulum imperdiet et elit.</p>
+    		</div>
+    		<div class="col-md-4 ds-blade-cta">
+    			<div class="icon-wrap">
+    				<i class="icon icon-clipboard"></i>
+    			</div>
+    			<h4>Easy Finance</h4>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae erat venenatis nisi porta vestibulum imperdiet et elit.</p>
+    		</div>
+    		<div class="col-md-4 ds-blade-cta">
+    			<div class="icon-wrap">
+    				<i class="icon icon-bubble"></i>
+    			</div>
+    			<h4>Contact Us Today</h4>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae erat venenatis nisi porta vestibulum imperdiet et elit.</p>
+    		</div>
+    	</div>
+    </div>
 
     <!-- Gallery -->
     <div class="ds-blade ds-blade-tertiary ds-blade-car-gallery has-bg">

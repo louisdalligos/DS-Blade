@@ -1001,12 +1001,12 @@ select.form-control {
 /* Page Styles */
 .ds-blade-page-banner {
   height: 292px;
-}
-
-.page-banner-has-bg {
-  background: url(img/page-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.page-banner-default {
+  background: url(img/page-banner.jpg);
 }
 
 .ds-blade-breadcrumbs {
@@ -1057,7 +1057,7 @@ select.form-control {
   border-radius: 20px;
   padding: 10px 10px 0;
   margin-bottom: 30px;
-  background-color: #ffc000;
+  /*background-color: #ffc000;*/
 }
 .page-sidebar-navigation .nav > li {
   margin-bottom: 10px;
